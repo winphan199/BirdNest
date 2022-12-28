@@ -5,7 +5,7 @@ async function getDroneListService() {
 //     const prefix = 'http://ec2-13-53-62-239.eu-north-1.compute.amazonaws.com:8080/';
     const prefix = '';
     // link to latest found drones in 500m x 500m area
-    const url = 'http://assignments.reaktor.com/birdnest/drones';
+    const url = 'https://assignments.reaktor.com/birdnest/drones';
     // origin
     const origin = 'localhost:3000';
 
