@@ -1,6 +1,7 @@
 # BirdNest solution
 
 This is a solution to BirtNest assignment used for intern recruitment.
+Website: https://main.dx5fd1rzn71i6.amplifyapp.com/
 
 ## Features
 
@@ -34,3 +35,4 @@ npm start
 -   Framework: ReactJS
 -   Styling: Tailwind CSS
 -   Tools: Visual Studio Code
+-   Hosting: AWS Amplify
