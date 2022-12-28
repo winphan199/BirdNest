@@ -18,7 +18,6 @@ async function getDroneListService() {
             },
         });
         response = await response.text();
-        console.log(response);
 
         // parse xml file to DOM
         let xmlContent = response;
