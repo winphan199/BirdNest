@@ -1,6 +1,6 @@
 async function getPilotInfoService(serialNumber) {
     // link to the prefix used to solve cor policy
-    const prefix = 'proxyanywhere.13.53.62.239.nip.io/';
+    const prefix = 'https://proxyanywhere.13.53.62.239.nip.io/';
     // link to pilot info
     const url = `http://assignments.reaktor.com/birdnest/pilots/${serialNumber}`;
 
