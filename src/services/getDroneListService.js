@@ -2,12 +2,11 @@ import xml2json from './convertXMLtoJSONService';
 
 async function getDroneListService() {
     // link to the prefix used to solve cor policy
-//     const prefix = 'http://ec2-13-53-62-239.eu-north-1.compute.amazonaws.com:8080/';
-    const prefix = '';
+    const prefix = 'https://ec2-13-53-62-239.eu-north-1.compute.amazonaws.com:8080/';
     // link to latest found drones in 500m x 500m area
     const url = 'https://assignments.reaktor.com/birdnest/drones';
     // origin
-    const origin = 'localhost:3000';
+    const origin = 'https://main.dx5fd1rzn71i6.amplifyapp.com/';
 
     try {
         // fetch list of drones
