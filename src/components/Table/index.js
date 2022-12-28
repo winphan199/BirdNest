@@ -125,7 +125,7 @@ function Table({ pilotList }) {
                         <th className="hidden md:table-cell whitespace-nowrap pr-4 pb-4 w-12 text-center">#</th>
                         <th
                             className={classNames(
-                                'whitespace-nowrap sticky -left-8 bg-white px-4 pb-4 w-44 before:absolute before:-top-8 before:-right-8 before:bottom-0 before:w-8 before:shadow-[inset_10px_0_8px_-8px_#00000026]',
+                                'whitespace-nowrap z-50 sticky -left-8 bg-white px-4 pb-4 w-44 before:absolute before:-top-8 before:-right-8 before:bottom-0 before:w-8 before:shadow-[inset_10px_0_8px_-8px_#00000026]',
                                 {
                                     'before:content-none': !onScrollStyles,
                                 },
