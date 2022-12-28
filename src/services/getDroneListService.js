@@ -2,9 +2,9 @@ import xml2json from './convertXMLtoJSONService';
 
 async function getDroneListService() {
     // link to the prefix used to solve cor policy
-    const prefix = 'proxyanywhere.13.53.62.239.nip.io/';
+    const prefix = 'https://proxyanywhere.13.53.62.239.nip.io/';
     // link to latest found drones in 500m x 500m area
-    const url = 'https://assignments.reaktor.com/birdnest/drones';
+    const url = 'http://assignments.reaktor.com/birdnest/drones';
     // origin
     const origin = 'https://main.dx5fd1rzn71i6.amplifyapp.com/';
 
