@@ -1,6 +1,6 @@
 # BirdNest solution
 
-This is a solution to BirtNest assignment used for intern recruitment. </br>
+This is a solution to BirdNest assignment used for intern recruitment. </br>
 Website: https://main.dx5fd1rzn71i6.amplifyapp.com/
 
 ## Features

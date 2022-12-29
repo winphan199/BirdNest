@@ -121,11 +121,13 @@ function Table({ pilotList }) {
         >
             <table className="table-auto w-full">
                 <thead className="border-b border-gray-200 text-left text-neutral-500">
-                    <tr className="text-base">
-                        <th className="hidden md:table-cell whitespace-nowrap pr-4 pb-4 w-12 text-center">#</th>
+                    <tr className="text-sm lg:text-base">
+                        <th className="hidden md:table-cell whitespace-nowrap pr-2 pb-2 lg:pr-4 lg:pb-4 w-12 text-center">
+                            #
+                        </th>
                         <th
                             className={classNames(
-                                'whitespace-nowrap z-50 sticky -left-8 bg-white px-4 pb-4 w-44 before:absolute before:-top-8 before:-right-8 before:bottom-0 before:w-8 before:shadow-[inset_10px_0_8px_-8px_#00000026]',
+                                'whitespace-nowrap z-50 sticky -left-8 bg-white px-2 pb-2 lg:px-4 lg:pb-4 w-44 before:absolute before:-top-8 before:-right-8 before:bottom-0 before:w-8 before:shadow-[inset_10px_0_8px_-8px_#00000026]',
                                 {
                                     'before:content-none': !onScrollStyles,
                                 },
@@ -162,7 +164,7 @@ function Table({ pilotList }) {
                                 </span>
                             </div>
                         </th>
-                        <th className="whitespace-nowrap px-4 pb-4 w-72">
+                        <th className="whitespace-nowrap px-2 pb-2 lg:px-4 lg:pb-4 w-72">
                             <div
                                 className="inline-block cursor-pointer hover:text-neutral-600"
                                 onClick={() => {
@@ -194,7 +196,7 @@ function Table({ pilotList }) {
                                 </span>
                             </div>
                         </th>
-                        <th className="whitespace-nowrap px-4 pb-4 w-52 min-w-[170px]">
+                        <th className="whitespace-nowrap px-2 pb-2 lg:px-4 lg:pb-4 w-52 min-w-[170px]">
                             <div
                                 className="inline-block cursor-pointer hover:text-neutral-600"
                                 onClick={() => {
@@ -226,7 +228,7 @@ function Table({ pilotList }) {
                                 </span>
                             </div>
                         </th>
-                        <th className="whitespace-nowrap px-4 pb-4 w-56  min-w-[170px]">
+                        <th className="whitespace-nowrap px-2 pb-2 lg:px-4 lg:pb-4 w-56  min-w-[170px]">
                             <div
                                 className="inline-block cursor-pointer hover:text-neutral-600"
                                 onClick={() => {
@@ -258,7 +260,7 @@ function Table({ pilotList }) {
                                 </span>
                             </div>
                         </th>
-                        <th className="whitespace-nowrap px-4 pb-4 w-56 min-w-[130px]">
+                        <th className="whitespace-nowrap px-2 pb-2 lg:px-4 lg:pb-4 w-56 min-w-[130px]">
                             <div
                                 className="inline-block cursor-pointer hover:text-neutral-600"
                                 onClick={() => {
@@ -290,7 +292,7 @@ function Table({ pilotList }) {
                                 </span>
                             </div>
                         </th>
-                        <th className="whitespace-nowrap px-4 pb-4 text-center w-24">
+                        <th className="whitespace-nowrap px-2 pb-2 lg:px-4 lg:pb-4 text-center w-24">
                             <span>Action</span>
                         </th>
                     </tr>
@@ -304,13 +306,13 @@ function Table({ pilotList }) {
                             }
 
                             return (
-                                <tr key={index} className="border-b border-gray-200 text-lg">
-                                    <td className="hidden md:block whitespace-nowrap pr-4 py-4 text-slate-800 font-medium text-center">
+                                <tr key={index} className="border-b border-gray-200 text-base lg:text-lg">
+                                    <td className="hidden md:block whitespace-nowrap pr-2 py-2 lg:pr-4 lg:py-4 text-slate-800 font-medium text-center">
                                         {index + 1}
                                     </td>
                                     <td
                                         className={classNames(
-                                            'whitespace-nowrap sticky bg-white p-4 -left-8 before:absolute before:top-0 before:-right-8 before:bottom-0 before:w-8 before:shadow-[inset_10px_0_8px_-8px_#00000026] text-slate-800 font-medium text-ellipsis',
+                                            'whitespace-nowrap sticky bg-white p-2 lg:p-4 -left-8 before:absolute before:top-0 before:-right-8 before:bottom-0 before:w-8 before:shadow-[inset_10px_0_8px_-8px_#00000026] text-slate-800 font-medium text-ellipsis',
                                             {
                                                 'before:content-none': !onScrollStyles,
                                             },
@@ -320,15 +322,15 @@ function Table({ pilotList }) {
                                             ? 'Unknown'
                                             : pilot?.pilotInfo?.firstName + ' ' + pilot?.pilotInfo?.lastName}
                                     </td>
-                                    <td className="whitespace-nowrap p-4 text-slate-800 font-medium overflow-hidden text-ellipsis">
+                                    <td className="whitespace-nowrap p-2 lg:p-4 text-slate-800 font-medium overflow-hidden text-ellipsis">
                                         {!noPilotInfo && pilot?.pilotInfo?.email ? pilot.pilotInfo.email : 'Unknown'}
                                     </td>
-                                    <td className="whitespace-nowrap p-4 text-slate-800 font-medium">
+                                    <td className="whitespace-nowrap p-2 lg:p-4 text-slate-800 font-medium">
                                         {!noPilotInfo && pilot?.pilotInfo?.phoneNumber
                                             ? pilot.pilotInfo?.phoneNumber
                                             : 'Unknown'}
                                     </td>
-                                    <td className="whitespace-nowrap p-4 text-slate-800 font-medium">
+                                    <td className="whitespace-nowrap p-2 lg:p-4 text-slate-800 font-medium">
                                         <p
                                             className={classNames([
                                                 'max-w-[120px]',
@@ -351,10 +353,10 @@ function Table({ pilotList }) {
                                             {Math.round(pilot.distance / 1000) + 'm'}
                                         </p>
                                     </td>
-                                    <td className="whitespace-nowrap p-4 text-slate-800 font-medium">
+                                    <td className="whitespace-nowrap p-2 lg:p-4 text-slate-800 font-medium">
                                         {handleTimeDisplay(pilot)}
                                     </td>
-                                    <td className="whitespace-nowrap p-4 text-slate-800 font-medium flex justify-center">
+                                    <td className="whitespace-nowrap p-2 lg:p-4 text-slate-800 font-medium flex justify-center">
                                         <div>
                                             <button
                                                 onClick={() => exportUserInfo(pilot)}
